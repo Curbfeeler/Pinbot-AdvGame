@@ -1,0 +1,331 @@
+UserInterface:
+  splash_screen: 'loading.jpg'
+  progress_bar:
+      x_center: 0.5
+      y_center: 0.25
+      width: 0.9
+      height: 0.10
+      border: 
+        - 255
+        - 0
+        - 255
+      fill: 
+        - 0
+        - 255
+        - 0
+  text:
+    y_center: 0.3
+LampShows:
+- key: 'attract_show_1'
+  file: 'attract_show_1.lampshow'  
+- key: 'attract_show_2'
+  file: 'attract_show_2.lampshow'  
+Animations:
+- key: 'cows'
+  file: 'cows_shuffling.dmd'  
+- key: 'firework'
+  file: 'firework.dmd'  
+  composite_op: 'greensrc'
+  x_loc: 100
+  y_loc: 0
+- key: 't800-war'
+  file: 't800-war_one.gif'
+  frame_time : 2
+- key: 'explosion'
+  file: 'explosion.gif'
+  frame_time : 4
+  composite_op: 'magentasrc'  
+- key: 'gameover'
+  file: 'thumbsup.gif'
+  frame_time : 2
+- key: 'starsgif'
+  file: 'MovingStarfield120s720p_512kb.gif'
+  frame_time : 1
+- key: 'starsmp4'
+  file: 'stars.mp4'
+  frame_time : 1
+- key: 'chrome'
+  file: 'chrome.png'  
+- key: 'dark_chrome'
+  file: 'dark_chrome.png'  
+- key : 'title'
+- key : 'fire'
+- key : 'pretty'
+- key : 'flames'
+  frame_time : 3
+  repeatAnim : True
+  # y_loc: -30
+Fonts:
+  FontStyles:
+  - key: blueish
+    interior_color:
+      - 0
+      - 0
+      - 128
+    line_width: 2
+    line_color:
+      - 255
+      - 0
+      - 128
+  HDFonts:
+  - key: 'Tiny7'
+    systemName: "Arial"
+    size: 14
+  - key: 'Font_7x5'
+    systemName: "Times"
+    size: 14
+  - key: 'Font_14x10'
+    systemName: "Consolas"
+    size: 20
+  - key: 'SM20aa'
+    systemName: "Consolas"
+    size: 20
+  - key: 'mono-tiny'
+    systemName: "Consolas"
+    size: 18
+  - key: 'mono-micro'
+    systemName: "Consolas"
+    size: 12
+  - key: 'Arrows'
+    systemName: "Roadgeek 2005 Arrows 1"
+    size: 24
+  - key: 'settings-font'
+    systemName: "werfProFont"
+    size: 16
+  - key: 'settings-font-small'
+    systemName: "werfProFont"
+    size: 15
+  - key: 'tiny'
+    systemName: "werfProFont"
+    size: 8
+  - key: 'small'
+    systemName: "werfProFont"
+    size: 12
+  - key: 'med'
+    systemName: "werfProFont"
+    size: 15
+  - key: 'large'
+    systemName: "werfProFont"
+    size: 20
+  - key: 'score_1p'
+    systemName: "werfProFont"
+    size: 48
+  - key: 'score_activeL'
+    systemName: "werfProFont"
+    size: 48
+  - key: 'score_activeM'
+    systemName: "werfProFont"
+    size: 40
+  - key: 'score_activeS'
+    systemName: "werfProFont"
+    size: 32
+  - key: 'score_inactive'
+    systemName: "werfProFont"
+    size: 32
+  - key: 'score_sub'
+    systemName: "werfProFont"
+    size: 14
+  - key: 'default_msg'
+    systemName: "werfProFont"
+    size: 15
+  - key: 'tilt-font-small'
+    systemName: "werfProFont"
+    size: 15
+  - key: 'tilt-font-big'
+    systemName: "werfProFont"
+    size: 18
+  - key: 'high_score_entry_inits'
+    systemName: "werfProFont"
+    size: 12
+  - key: 'high_score_entry_msg'
+    systemName: "werfProFont"
+    size: 12
+  - key: 'high_score_entry_letters'
+    systemName: "werfProFont"
+    size: 12
+  DMDFonts:
+  - key: 'CC_9px'
+    file: "Font_CC_9px_az.dmd"
+  - key: 'font_matrix'
+    file: "switch_matrix_font.dmd"
+Audio:
+  Music:
+    - key: 'Main1'
+      file: 'Universal Robot Band_Space Disco - Game Start.ogg'
+      volume: 0.6
+    - key: 'MainAfterMode1_1'
+      file: 'Universal Robot Band - Space Disco After Modes.ogg'
+      volume: 0.6
+    - key: 'MainAfterMode1_2'
+      file: 'Universal Robot Band - Space Disco After Modes2.ogg'
+      volume: 0.6
+    - key: 'MainAfterMode1_3'
+      file: 'Universal Robot Band - Space Disco After Modes3.ogg'
+      volume: 0.6
+    - key: 'MainAfterMode1'
+      file: 'Universal Robot Band - Space Disco After Modes.ogg'
+      volume: 0.6
+    - key: 'Main2'
+      file: 'TheDroids-TheForcePartsIandII-Game Start.ogg'
+      volume: 0.6
+    - key: 'MainAfterMode2_1'
+      file: 'TheDroids-TheForcePartsIandII-After Modes.ogg'
+      volume: 0.6
+    - key: 'MainAfterMode2_2'
+      file: 'TheDroids-TheForcePartsIandII-After Modes2.ogg'
+      volume: 0.6
+    - key: 'MainAfterMode2_3'
+      file: 'TheDroids-TheForcePartsIandII-After Modes3.ogg'
+      volume: 0.6
+    - key: 'MainAfterMode2'
+      file: 'TheDroids-TheForcePartsIandII-After Modes2.ogg'
+      volume: 0.6
+    - key: 'Main3'
+      file: 'Universal Robot Band_Space Disco - Game Start.ogg'
+      volume: 0.6
+    - key: 'MainAfterMode3_1'
+      file: 'Universal Robot Band - Space Disco After Modes.ogg'
+      volume: 0.6
+    - key: 'MainAfterMode3_2'
+      file: 'Universal Robot Band - Space Disco After Modes2.ogg'
+      volume: 0.6
+    - key: 'MainAfterMode3_3'
+      file: 'Universal Robot Band - Space Disco After Modes3.ogg'
+      volume: 0.6
+    - key: 'MainAfterMode3'
+      file: 'Universal Robot Band - Space Disco After Modes.ogg'
+      volume: 0.6
+    - key: 'GetSpecial1'
+      file: 'DigitalMind-Countdown.ogg'
+      volume: 0.9
+    - key: 'GetSpecial2'
+      file: 'DigitalMind-Countdown.ogg'
+      volume: 0.9
+    - key: 'GetSpecial3'
+      file: 'DigitalMind-Countdown.ogg'
+      volume: 0.9
+    - key: 'MultiB1'
+      file: 'Automat_Droid_SansIntro.ogg'
+      volume: 0.4
+    - key: 'MultiB2'
+      file: 'Automat_Droid_SansIntro.ogg'
+      volume: 0.5
+    - key: 'MultiB3'
+      file: 'Automat_Droid_SansIntro.ogg'
+      volume: 0.5
+    - key: 'Pluto'
+      file: 'YellowMagicOrchestra-TongPoo.ogg'
+      volume: 0.6
+    - key: 'Neptune'
+      file: 'KenLaszlo-HeyHeyGuy.ogg'
+      volume: 0.6
+    - key: 'Uranus'
+      file: 'Space-Robbots.ogg'
+      volume: 0.4
+    - key: 'Saturn'
+      file: 'EasyGoing-DoItAgain.ogg'
+      volume: 0.9
+    - key: 'Jupiter'
+      file: 'Rockets-SpaceRock.ogg'
+      volume: 0.9
+    - key: 'Mars'
+      file: 'LaurentVaguener-IsraelConnection.ogg'
+      volume: 0.9
+    - key: 'Earth'
+      file: 'Transvolta_DiscoComputer.ogg'
+      volume: 0.6
+    - key: 'Venus'
+      file: 'LePamplemousse-LeSpank.ogg'
+      volume: 0.9
+    - key: 'Mercury'
+      file: 'Milkways-GalacticReaction.ogg'
+      volume: 0.9      
+    - key: 'Sol'
+      file: 'LePamplemousse-LeSpank.ogg'
+      volume: 0.9
+  Effects:
+    - key: 'ball_serve'
+      file: 'BallServe.ogg'
+    - key: 'ball_launch'
+      file: 'ballServed.ogg'
+    - key: 'ball_saved'
+      file: 'AutoFire.ogg'
+    - key: 'ball_saved'
+      file: 'ballsave.wav'
+    - key: 'ss_tick'
+      file: 'skill_shot_target_move.ogg'
+    - key: 'make_shot'
+      file: 'make_shot.ogg'
+    - key: 'miss_shot'
+      file: 'miss_shot.ogg'
+    - key: 'service_save'
+      file: 'save.wav'
+    - key: 'service_previous'
+      file: 'previous_item.wav'
+    - key: 'service_enter'
+      file: 'menu_in.wav'
+    - key: 'service_exit'
+      file: 'menu_out.wav'
+    - key: 'service_next'
+      file: 'next_item.wav'
+    - key: 'service_cancel'
+      file: 'menu_out.wav'
+    - key: 'sling'
+      file: 'sling1.ogg'
+    - key: 'sling'
+      file: 'sling2.ogg'   
+    - key: 'target'
+      file: 'randomTarget1.ogg'   
+    - key: 'target'
+      file: 'randomTarget2.ogg'   
+    - key: 'target'
+      file: 'randomTarget3.ogg'   
+    - key: 'special_hit'
+      file: 'CV_specialhit.ogg'   
+    - key: 'wah_wah'
+      file: 'CV_wah-wah.ogg'   
+    - key: 'wow'
+      file: 'CV_wow.ogg'   
+  Voice:
+    - key: 'impressive'
+      file: 'impressive.ogg'
+      volume: 0.8
+    - key: 'special_lit'
+      file: 'speciallit.ogg'
+      volume: 0.8
+    - key: '60_seconds'
+      file: '60Seconds.ogg'
+      volume: 0.8
+    - key: '30_seconds'
+      file: '30Seconds.ogg'
+      volume: 0.8
+    - key: '10_seconds'
+      file: 'countdown10.ogg'
+      volume: 0.8
+    - key: 'pluto_dwarf'
+      file: 'plutodwarfplanet.ogg'
+      volume: 0.8
+    - key: 'neptune_8th'
+      file: 'neptune8th.ogg'
+      volume: 0.8
+    - key: 'uranus_bluegreen'
+      file: 'uranus_bluegreen.ogg'
+      volume: 0.8
+    - key: 'saturn_ringed'
+      file: 'saturnringedplanet.ogg'
+      volume: 0.8
+    - key: 'jupiter_redeyegiant'
+      file: 'jupiterredeyegiant.ogg'
+      volume: 0.8
+    - key: 'mars_redplanet'
+      file: 'marsredplanet.ogg'
+      volume: 0.8
+    - key: 'earth_bluemarble'
+      file: 'earthbluemarble.ogg'
+      volume: 0.8
+    - key: 'venus_eveningstar'
+      file: 'venuseveningstar.ogg'
+      volume: 0.8
+    - key: 'mercury_closest'
+      file: 'mercuryclosestplanentsun.ogg'
+      volume: 0.8      

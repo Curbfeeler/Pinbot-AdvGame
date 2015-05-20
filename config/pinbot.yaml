@@ -1,0 +1,494 @@
+#################################################################################
+##____ ___ _   _ ____   ___ _____   ____    ___                      
+#|  _ \_ _| \ | | __ ) / _ \_   _| |___ \  / _ \                     
+#| |_) | ||  \| |  _ \| | | || |     __) || | | |                    
+#|  __/| || |\  | |_) | |_| || |    / __/ | |_| |                    
+#|_|__|___|_|_\_|____/_\___/_|_| __|_____(_)___/_____ ___ ___  _   _ 
+#|  _ \     |  _ \ / _ \ / ___| | ____|  _ \_ _|_   _|_ _/ _ \| \ | |
+#| |_) |____| |_) | | | | |     |  _| | | | | |  | |  | | | | |  \| |
+#|  __/_____|  _ <| |_| | |___  | |___| |_| | |  | |  | | |_| | |\  |
+#|_|        |_| \_\\___/ \____| |_____|____/___| |_| |___\___/|_| \_|
+##                                                                   
+## A P-ROC Project by Dan Myers, Copyright 2013-2014
+## Built on the PyProcGame Framework from Adam Preble and Gerry Stellenberg
+## Thanks to Scott Danesi for his Earthshaker Project, which is my starting point
+#################################################################################
+# P-ROC Game Description file for PINBOT
+#
+# The 'label' tag on each of the coils/switches/lamps is only used to make the service mode look nicer
+PRGame:
+    # Treat this as wpc as that's how the P-ROC will see it via the interface board.
+    machineType: wpcAlphanumeric
+    numBalls: 4
+    # Should we attempt to initialise and use the Arduino?
+    arduino: false
+PRFlippers:
+    - flipperLwR
+    - flipperLwL
+PRBumpers:
+    - slingL
+    - slingR
+    - jetTop
+    - jetMiddle
+    - jetBottom
+    
+PRKickbacks:
+#none
+PRPinmame:
+    # This section is specific to running the P-ROC via Pinmame.
+
+    # keyboard:
+    #   on or off - determines whether keyboard will be enabled or not
+    #   useful in a Sys11 in early debugging
+
+    # s11CreditDisplay and s11BallDisplay :
+    #   If using a Sys11 game prior which has a separate Ball/Credit display, you can put them on the
+    #   DMD.  If the value for a display is set to zero (or removed from YAML) it won't display.
+    #   Otherwise it's the vertical position of the display from the top.  Try 1 and 15 for a start.
+
+    # autoPatterDetection:
+    #   on or off - by default, Pinmame will try to automatically detect patter requirements.
+    #   there is a thread on the forum about this.  For Sys11 this should certainly be disabled,
+    #   as it does nasty things.  Likely enable for other platforms but could be useful to disable.
+
+    # doubleAlpha:
+    #   0 or 1 - set to 1 if your machine has 2 lines of 16 character alphanumeric displays.
+    #   This will adapt the code to properly handle the various display types in Sys11 machines (and a couple of WPC)
+
+    keyboard: on
+    autoPatterDetection: off
+    s11CreditDisplay: 0
+    s11BallDisplay: 0
+    doubleAlpha: 1
+PRSwitches:
+    # **** Format ****
+    # name:
+    #   number: <number>
+    #   type: <type>
+    #
+    #   <number> can be: SFx (Flipper switch, labeled Fx in WPC manual
+    #                    SDx (Dedicated switch, labeled SDx in WPC manual
+    #                    Sx  (Matrix switch, labeled x in WPC manual
+    #   <type> can be: 'NO' (normally open.  This is the default; so no need to use this)
+    #                  'NC' (normally closed.  Common for optos)
+
+##################################
+# DOOR AND CAB SWITCHES
+    coinLeft:
+        number: S16
+        label: 'Left Coin Slot'
+    coinCenter:
+        number: S15
+        label: 'Center Coin Slot'
+    coinRight:
+        number: S14
+        label: 'Right Coin Slot'
+    upSys11:
+        number: SD8
+    downSys11:
+        number: SD2
+    enterSys11:
+        number: SD5
+    exitSys11:
+        number: SD0
+    startButton:
+        number: S13
+        label: 'Start Button'
+    tilt:
+        number: S11
+        label: 'Tilt'
+    rollTilt:
+        number: S12
+        label: 'Roll Tilt'
+    slamTilt:
+        number: S17
+        label: 'Slam Tilt'
+    highScoreReset:
+        number: S18
+    playfieldTilt:
+        number: S21
+        label: 'Playfield Tilt'
+##################################
+# LOWER PLAYFIELD SWITCHES
+    flipperLwL:
+        number: S22
+        label: 'Left Flipper EOS'
+    flipperLwR:
+        number: S23
+        label: 'Right Flipper EOS'
+    outlaneLeft:
+        number: S24
+        label: 'Left Outlane'
+    inlaneLeft:
+        number: S25
+        label: 'Left Inlane'
+    inlaneRight:
+        number: S26
+        label: 'Right Inlane'
+    outlaneRight:
+        number: S27
+        label: 'Right Outlane'
+    outhole:
+        number: S28
+        tags: outhole
+        label: 'Outhole'
+    trough4:
+        number: S87
+        tags: trough
+        label: 'LeftMost Ball Trough'
+    trough3:
+        number: S86
+        tags: trough
+        label: 'LeftMost Ball Trough minus 1'
+    trough2:
+        number: S32
+        tags: trough
+        label: 'Rightmost Ball Trough minus 1'
+    trough1:
+        number: S31
+        tags: trough
+        label: 'Rightmost Ball Trough'
+    shooter:
+        number: S34
+        tags: shooter_lane
+        label: 'Shooter Lane'
+    slingL:
+        number: S76
+        label: 'Left Sling'
+    slingR:
+        number: S77
+        label: 'Right Sling'
+##################################
+# VORTEX SWITCHES
+    vortex5k:
+        number: S38
+    vortex20k:
+        number: S36
+    vortex100k:
+        number: S37
+##################################
+# CHEST AND VISOR SWITCHES SWITCHES
+    chestMatrix01:
+        number: S44
+        label: 'Chest Horiz Yellow'
+    chestMatrix02:
+        number: S45
+        label: 'Chest Horiz Blue'
+    chestMatrix03:
+        number: S46
+        label: 'Chest Horiz Orange'
+    chestMatrix04:
+        number: S47
+        label: 'Chest Horiz Green'
+    chestMatrix05:
+        number: S48
+        label: 'Chest Horiz Red'
+    chestMatrix10:
+        number: S51
+        label: 'Chest Vert Yellow'
+    chestMatrix20:
+        number: S52
+        label: 'Chest Vert Blue'
+    chestMatrix30:
+        number: S53
+        label: 'Chest Vert Orange'
+    chestMatrix40:
+        number: S54
+        label: 'Chest Vert Green'
+    chestMatrix50:
+        number: S55
+        label: 'Chest Vert Red'
+    visorOpen:
+        number: S67
+    visorClosed:
+        number: S66
+#EJECTS/EYEBALLS
+    rightEyeball:
+        number: S42
+        label: 'Right Eye Eject'
+    leftEyeball:
+        number: S41
+        label: 'Left Eye Eject'
+    singleEject:
+        number: S56
+        label: 'Single Eject'
+##################################
+# RAMP SWITCHES
+    enterRamp:
+        number: S57
+    exitRamp:
+        number: S58
+    rampIsDown:
+        number: S64
+##################################
+# JET SWITCHES
+    jetTop:
+        number: S74
+        label: 'Top Jet Bumper'
+    jetMiddle:
+        number: S68
+        label: 'Middle Jet Bumper'
+    jetBottom:
+        number: S75
+        label: 'Lower Jet Bumper'
+##################################
+# 10 POINTER SWITCHES
+    tenPointer1:
+        number: S78
+    tenPointer2_BehindDropBank:
+        number: S83
+    tenPointer3:
+        number: S84
+##################################
+# DROP TARGET BANK
+    upperDrop:
+        number: S71
+    midDrop:
+        number: S72
+    lowerDrop:
+        number: S73
+##################################
+# STANDUP TARGETS
+    scoreEnergyStandUp:
+        number: S65
+    advancePlanent:
+        number: S33
+##################################
+# UNUSED SWITCHES
+    debug:
+        number: S35
+    diagLED:
+        number: S61
+    unused62:
+        number: S62
+    unused63:
+        number: S63
+    unused81:
+        number: S81
+    exit:
+        number: S82
+    up:
+        number: S85
+    down:
+        number: S86
+    enter:
+        number: S43
+    NA1:
+        number: S88
+        
+PRCoils:
+    flipperLwRMain: 
+        number: FLRM
+        label: 'FLRM'
+    flipperLwRHold: 
+        number: FLRH
+        label: 'FLRH'
+    flipperLwLMain: 
+        number: FLLM
+        label: 'FLLM'
+    flipperLwLHold: 
+        number: FLLH
+        label: 'FLLH'
+    outholeKicker_Knocker:
+        number: C01
+        tags: outhole
+        label: 'outholeKicker_Knocker'
+    trough:
+        number: C02
+        tags: trough_eject
+        label: 'trough'
+    singleEjectHole_LeftInsertBDFlasher:
+        number: C03
+        label: 'singleEjectHole_LeftInsertBDFlasher'
+    dropTargetReset_RightInsertBDFlasher:
+        number: C04
+        label: 'dropTargetReset_RightInsertBDFlasher'
+    raiseRamp_LowerPFTop1Flasher:
+        number: C05
+        label: 'raiseRamp_LowerPFTop1Flasher'
+    lowerRamp_EnergyFlashers:
+        number: C06
+        label: 'lowerRamp_EnergyFlashers'
+    leftEyeballEject_LeftPlayfieldFlasher:
+        number: C07
+        label: 'leftEyeballEject_LeftPlayfieldFlasher'
+    rightEyeballEject_SunFlasher:
+        number: C08
+        label: 'rightEyeballEject_SunFlasher'
+    robotFaceInsertBD:
+        number: C09
+        label: 'robotFaceInsertBD'
+    rightVisorGI:
+        number: C10
+        label: 'rightVisorGI'
+    giInsertBD:
+        number: C11
+        label: 'giInsertBD'
+    gi:
+        number: C12
+        label: 'giPlayfield'
+    visorMotor:
+        number: C13
+        label: 'visorMotor'
+    acSelect:
+        number: C14
+        label: 'acSelect'
+    top3Flashers:
+        number: C15
+        label: 'top3Flashers'
+    top4CenterFlashers:
+        number: C16
+        label: 'top4CenterFlashers'
+    jetTop:
+        number: C17
+        label: 'jetTop'
+    slingL:
+        number: C18
+        label: 'slingL'
+    jetMiddle:
+        number: C19
+        label: 'jetMiddle'
+    slingL:
+        number: C20
+        label: 'slingL'
+    slingR:
+        number: C21
+        label: 'slingR'
+    jetBottom:
+        number: C22
+        label: 'jetBottom'
+    flipperEnable:
+        number: C23
+        label: 'flipperEnable'
+    diagLED:
+        number: C24
+
+PRLamps:
+    gameOverBackBox:
+        number: L11
+    matchBackBox:
+        number: L12
+    ballInPlayBackBox:
+        number: L13
+    mouth1LeftBackBox:
+        number: L14
+    mouth2BackBox:
+        number: L15
+    mouth3BackBox:
+        number: L16
+    mouth4BackBox:
+        number: L17
+    mouth5RightBackBox:
+        number: L18
+    x2Bonus:
+        number: L21
+    x3Bonus:
+        number: L22
+    x4Bonus:
+        number: L23
+    x5Bonus:
+        number: L24
+    eject25K:
+        number: L25
+    eject50K:
+        number: L26
+    eject75K:
+        number: L27
+    ejectLightExtraBall:
+        number: L28
+    dropTargetTimerLamp:
+        number: L31
+    advancePlanent:
+        number: L32
+    pluto:
+        number: L33
+    neptune:
+        number: L34
+    uranus:
+        number: L35
+    saturn:
+        number: L36
+    jupiter:
+        number: L37
+    mars:
+        number: L38
+    earth:
+        number: L41
+    venus:
+        number: L42
+    mercury:
+        number: L43
+    chestMatrix11:
+        number: L44
+    chestMatrix21:
+        number: L45
+    chestMatrix31:
+        number: L46
+    chestMatrix41:
+        number: L47
+    chestMatrix51:
+        number: L48
+    shootAgain:
+        number: L51
+    scoreEnergy:
+        number: L52
+    solarEnergyValue:
+        number: L53
+    chestMatrix12:
+        number: L54
+    chestMatrix22:
+        number: L55
+    chestMatrix32:
+        number: L56
+    chestMatrix42:
+        number: L57
+    chestMatrix52:
+        number: L58
+    dropTarget1Top:
+        number: L61
+    dropTarget2Middle:
+        number: L62
+    dropTarget3Bottom:
+        number: L63
+    chestMatrix13:
+        number: L64
+    chestMatrix23:
+        number: L65
+    chestMatrix33:
+        number: L66
+    chestMatrix43:
+        number: L67
+    chestMatrix53:
+        number: L68
+    leftOutLaneExtraBall:
+        number: L71
+    leftInLaneExtraBall:
+        number: L72
+    specialLamp:
+        number: L73
+    chestMatrix14:
+        number: L74
+    chestMatrix24:
+        number: L75
+    chestMatrix34:
+        number: L76
+    chestMatrix44:
+        number: L77
+    chestMatrix54:
+        number: L78
+    rightOutLaneExtraBall:
+        number: L81
+    rightInLaneExtraBall:
+        number: L82
+    notUsedLamp83:
+        number: L83
+    chestMatrix15:
+        number: L84
+    chestMatrix25:
+        number: L85
+    chestMatrix35:
+        number: L86
+    chestMatrix45:
+        number: L87
+    chestMatrix55:
+        number: L88

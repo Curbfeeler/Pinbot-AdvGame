@@ -1,0 +1,914 @@
+bg_image: playfield.jpg
+button_locations:
+- vortex100k:
+    x: 300
+    y: 100
+- coinRight:
+    x: 75
+    y: 0
+- playfieldTilt:
+    x: 30
+    y: 863
+- upSys11:
+    x: 426
+    y: 338
+- trough2:
+    x: 298
+    y: 683
+- trough3:
+    x: 277
+    y: 699
+- trough1:
+    x: 325
+    y: 667
+- coinLeft:
+    x: 125
+    y: 0
+- scoreEnergyStandUp:
+    x: 42
+    y: 93
+- tenPointer2_BehindDropBank:
+    x: 5
+    y: 364
+- unused81:
+    x: 8
+    y: 5
+- vortex5k:
+    x: 296
+    y: 133
+- lowerDrop:
+    x: 24
+    y: 397
+- rampIsDown:
+    x: 76
+    y: 283
+- exitRamp:
+    x: 325
+    y: 37
+- chestMatrix50:
+    x: 111
+    y: 342
+- unused62:
+    x: 363
+    y: 4
+- unused63:
+    x: 391
+    y: 2
+- downSys11:
+    x: 424
+    y: 284
+- tilt:
+    x: 8
+    y: 860
+- inlaneLeft:
+    x: 45
+    y: 587
+- rightEyeball:
+    x: 217
+    y: 67
+- diagLED:
+    x: 336
+    y: 1
+- outlaneLeft:
+    x: 16
+    y: 588
+- NA1:
+    x: 149
+    y: 1
+- exit:
+    x: 38
+    y: 2
+- visorClosed:
+    x: 215
+    y: 27
+- chestMatrix20:
+    x: 111
+    y: 276
+- chestMatrix01:
+    x: 131
+    y: 231
+- jetBottom:
+    x: 326
+    y: 341
+- chestMatrix03:
+    x: 174
+    y: 229
+- chestMatrix02:
+    x: 151
+    y: 230
+- inlaneRight:
+    x: 303
+    y: 584
+- upperDrop:
+    x: 30
+    y: 343
+- enterSys11:
+    x: 427
+    y: 309
+- midDrop:
+    x: 27
+    y: 369
+- slingL:
+    x: 75
+    y: 590
+- chestMatrix40:
+    x: 109
+    y: 318
+- enterRamp:
+    x: 115
+    y: 31
+- rollTilt:
+    x: 8
+    y: 883
+- visorOpen:
+    x: 190
+    y: 29
+- singleEject:
+    x: 50
+    y: 31
+- trough4:
+    x: 256
+    y: 716
+- highScoreReset:
+    x: 175
+    y: 0
+- advancePlanent:
+    x: 337
+    y: 447
+- vortex20k:
+    x: 305
+    y: 75
+- slamTilt:
+    x: 30
+    y: 883
+- slingR:
+    x: 268
+    y: 584
+- leftEyeball:
+    x: 131
+    y: 71
+- jetMiddle:
+    x: 280
+    y: 273
+- outlaneRight:
+    x: 332
+    y: 589
+- tenPointer3:
+    x: 313
+    y: 422
+- tenPointer1:
+    x: 58
+    y: 200
+- flipperLwR:
+    x: 362
+    y: 786
+- chestMatrix05:
+    x: 223
+    y: 230
+- shooter:
+    x: 366
+    y: 707
+- jetTop:
+    x: 334
+    y: 209
+- up:
+    x: 424
+    y: 362
+- chestMatrix04:
+    x: 198
+    y: 229
+- chestMatrix30:
+    x: 109
+    y: 297
+- startButton:
+    x: 293
+    y: 784
+- enter:
+    x: 424
+    y: 425
+- debug:
+    x: 425
+    y: 389
+- flipperLwL:
+    x: 0
+    y: 791
+- chestMatrix10:
+    x: 110
+    y: 255
+- exitSys11:
+    x: 424
+    y: 260
+- coinCenter:
+    x: 100
+    y: 0
+- outhole:
+    x: 176
+    y: 755
+lamp_locations:
+- dropTarget2Middle:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 66
+    y: 382
+- chestMatrix54:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 208
+    y: 355
+- chestMatrix55:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 230
+    y: 355
+- chestMatrix52:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 164
+    y: 358
+- matchBackBox:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 331
+    y: 10
+- chestMatrix51:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 142
+    y: 357
+- mouth3BackBox:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 0
+    y: 0
+- rightOutLaneExtraBall:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 344
+    y: 545
+- dropTargetTimerLamp:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 96
+    y: 384
+- jupiter:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 252
+    y: 537
+- dropTarget1Top:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 70
+    y: 357
+- uranus:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 185
+    y: 454
+- earth:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 152
+    y: 545
+- mouth2BackBox:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 0
+    y: 0
+- chestMatrix24:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 208
+    y: 290
+- ballInPlayBackBox:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 0
+    y: 0
+- chestMatrix53:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 187
+    y: 356
+- mercury:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 145
+    y: 499
+- notUsedLamp83:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 0
+    y: 0
+- mouth4BackBox:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 0
+    y: 0
+- gameOverBackBox:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 308
+    y: 11
+- chestMatrix25:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 230
+    y: 289
+- eject50K:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 89
+    y: 149
+- leftInLaneExtraBall:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 55
+    y: 543
+- dropTarget3Bottom:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 64
+    y: 408
+- chestMatrix23:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 186
+    y: 288
+- chestMatrix22:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 163
+    y: 288
+- chestMatrix21:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 141
+    y: 288
+- mars:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 208
+    y: 545
+- specialLamp:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 280
+    y: 498
+- x2Bonus:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 168
+    y: 594
+- shootAgain:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 185
+    y: 679
+- chestMatrix45:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 231
+    y: 333
+- chestMatrix44:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 208
+    y: 333
+- solarEnergyValue:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 74
+    y: 332
+- chestMatrix41:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 139
+    y: 332
+- chestMatrix33:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 0
+      r: 255
+    x: 186
+    y: 311
+- chestMatrix43:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 0
+      r: 0
+    x: 187
+    y: 332
+- chestMatrix42:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 0
+      g: 255
+      r: 0
+    x: 165
+    y: 333
+- pluto:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 73
+    y: 477
+- leftOutLaneExtraBall:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 25
+    y: 545
+- mouth1LeftBackBox:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 0
+    y: 0
+- advancePlanent:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 0
+      g: 255
+      r: 0
+    x: 325
+    y: 466
+- rightInLaneExtraBall:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 315
+    y: 546
+- x5Bonus:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 206
+    y: 634
+- saturn:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 251
+    y: 476
+- x4Bonus:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 166
+    y: 630
+- mouth5RightBackBox:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 0
+    y: 0
+- x3Bonus:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 205
+    y: 598
+- chestMatrix35:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 230
+    y: 311
+- neptune:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 120
+    y: 449
+- eject25K:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 96
+    y: 178
+- chestMatrix31:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 141
+    y: 311
+- chestMatrix32:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 163
+    y: 311
+- chestMatrix15:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 230
+    y: 266
+- chestMatrix34:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 208
+    y: 311
+- scoreEnergy:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 33
+    y: 204
+- eject75K:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 86
+    y: 117
+- chestMatrix12:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 162
+    y: 265
+- chestMatrix13:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 186
+    y: 265
+- venus:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 116
+    y: 513
+- chestMatrix11:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 139
+    y: 266
+- chestMatrix14:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 209
+    y: 266
+- ejectLightExtraBall:
+    color_off:
+      b: 0
+      g: 0
+      r: 0
+    color_on:
+      b: 255
+      g: 255
+      r: 0
+    x: 100
+    y: 207
+window_size:
+  height: 814
+  width: 404

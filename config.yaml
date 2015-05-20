@@ -1,0 +1,66 @@
+font_path:
+    - C:\P-ROC\shared\dmd\
+    - .\assets\dmd\
+config_path:
+    - C:\P-ROC\shared\config\
+dmd_path: ./assets/dmd/
+sounds_path: ./assets/sound/
+voice_dir: voice/
+sfx_dir: sfx/
+music_dir: music/
+
+default_modes:
+    score_display: True
+    bonus_tally: True
+    osc_input: True
+    service_mode: True
+
+pinproc_class: procgame.fakepinproc.FakePinPROC
+
+# all of this is for the hdDMD
+use_virtual_dmd_only: True
+dmd_grid_path: .\assets\dmd\
+dmd_dots_w: 224
+dmd_dots_h: 112
+dmd_dot_filter: True
+dmd_fullscreen: False
+desktop_dmd_scale: 6
+dmd_framerate: 30
+screen_position_x: 200
+screen_position_y: 200
+dmd_window_border: True
+PYSDL2_DLL_PATH: C:\Python26\DLLs\sdl2\
+
+# this is where I put my map...
+vp_game_map_file: /P-ROC/shared/vp_game_map.yaml
+
+keyboard_switch_map:
+    1: S15 # number key '1' maps the the trough1
+    2: S16 # '2' is trough 2
+    3: S17 # '3' is trough 3
+    x: S18 # the 'x' key is mapped to the outhole
+    s: S13 # the 's' key is mapped to the start button
+    6: S71 # 6 skillShotTarget 1
+    7: S72 # 7 skillShotTarget 2
+    8: S73 # 8 skillShotTarget 3
+    9: S74 # 9 skillShotTarget 4
+    0: S75 # 0 skillShotTarget 5    
+    i: S46 # 'i' key maps to right target top
+    o: S47 # right target mid
+    p: S48 # right target bottom
+    t: S36 # center target left
+    y: S37 # center target middle
+    u: S38 # center target right
+    a: SD8 # SERVICE BUTTON 
+    z: SD5 # EXIT BUTTON 
+    v: SD7 # UP BUTTON 
+    c: SD6 # DOWN BUTTON 
+    d: S78 # shooter lane
+    q: S56 # rollover lane left
+    w: S57 # rollover lane middle
+    e: S58 # rollover lane right
+    1073742053: S11 # 303 is the pygame keyboard code for left shift, mapped to left flipper
+    1073742049: S12 # 304 is the pygame code for right shift, right flipper
+    47: S34 # 47 is forward slash and is the grip trigger
+    f: S14 #tilt
+    g: S21 # slam tilt

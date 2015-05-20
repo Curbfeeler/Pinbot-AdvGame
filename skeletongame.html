@@ -1,0 +1,1158 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .octicon {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .anchor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body .highlight {
+  background: #fff;
+}
+
+.markdown-body .highlight .h {
+  color: #333;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.markdown-body .highlight .mf,
+.markdown-body .highlight .mh,
+.markdown-body .highlight .mi,
+.markdown-body .highlight .mo,
+.markdown-body .highlight .il,
+.markdown-body .highlight .m {
+  color: #945277;
+}
+
+.markdown-body .highlight .s,
+.markdown-body .highlight .sb,
+.markdown-body .highlight .sc,
+.markdown-body .highlight .sd,
+.markdown-body .highlight .s2,
+.markdown-body .highlight .se,
+.markdown-body .highlight .sh,
+.markdown-body .highlight .si,
+.markdown-body .highlight .sx,
+.markdown-body .highlight .s1 {
+  color: #df5000;
+}
+
+.markdown-body .highlight .kc,
+.markdown-body .highlight .kd,
+.markdown-body .highlight .kn,
+.markdown-body .highlight .kp,
+.markdown-body .highlight .kr,
+.markdown-body .highlight .kt,
+.markdown-body .highlight .k,
+.markdown-body .highlight .o {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .kt {
+  color: #458;
+}
+
+.markdown-body .highlight .c,
+.markdown-body .highlight .cm,
+.markdown-body .highlight .c1 {
+  color: #998;
+  font-style: italic;
+}
+
+.markdown-body .highlight .cp,
+.markdown-body .highlight .cs,
+.markdown-body .highlight .cp .h {
+  color: #999;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .cs {
+  font-style: italic;
+}
+
+.markdown-body .highlight .n {
+  color: #333;
+}
+
+.markdown-body .highlight .na,
+.markdown-body .highlight .nv,
+.markdown-body .highlight .vc,
+.markdown-body .highlight .vg,
+.markdown-body .highlight .vi {
+  color: #008080;
+}
+
+.markdown-body .highlight .nb {
+  color: #0086B3;
+}
+
+.markdown-body .highlight .nc {
+  color: #458;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .no {
+  color: #094e99;
+}
+
+.markdown-body .highlight .ni {
+  color: #800080;
+}
+
+.markdown-body .highlight .ne {
+  color: #990000;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .nf {
+  color: #945277;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .nn {
+  color: #555;
+}
+
+.markdown-body .highlight .nt {
+  color: #000080;
+}
+
+.markdown-body .highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+
+.markdown-body .highlight .gd {
+  color: #000;
+  background-color: #fdd;
+}
+
+.markdown-body .highlight .gd .x {
+  color: #000;
+  background-color: #faa;
+}
+
+.markdown-body .highlight .ge {
+  font-style: italic;
+}
+
+.markdown-body .highlight .gr {
+  color: #aa0000;
+}
+
+.markdown-body .highlight .gh {
+  color: #999;
+}
+
+.markdown-body .highlight .gi {
+  color: #000;
+  background-color: #dfd;
+}
+
+.markdown-body .highlight .gi .x {
+  color: #000;
+  background-color: #afa;
+}
+
+.markdown-body .highlight .go {
+  color: #888;
+}
+
+.markdown-body .highlight .gp {
+  color: #555;
+}
+
+.markdown-body .highlight .gs {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .gu {
+  color: #800080;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .gt {
+  color: #aa0000;
+}
+
+.markdown-body .highlight .ow {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .w {
+  color: #bbb;
+}
+
+.markdown-body .highlight .sr {
+  color: #017936;
+}
+
+.markdown-body .highlight .ss {
+  color: #8b467f;
+}
+
+.markdown-body .highlight .bp {
+  color: #999;
+}
+
+.markdown-body .highlight .gc {
+  color: #999;
+  background-color: #EAF2F5;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #000;
+  border: 1px solid #cfcfcf;
+  border-radius: 2px;
+}
+
+.markdown-body .highlight .pl-coc,
+.markdown-body .highlight .pl-entm,
+.markdown-body .highlight .pl-eoa,
+.markdown-body .highlight .pl-mai .pl-sf,
+.markdown-body .highlight .pl-pdv,
+.markdown-body .highlight .pl-sc,
+.markdown-body .highlight .pl-sr,
+.markdown-body .highlight .pl-v,
+.markdown-body .highlight .pl-vpf {
+  color: #0086b3;
+}
+
+.markdown-body .highlight .pl-eoac,
+.markdown-body .highlight .pl-mdht,
+.markdown-body .highlight .pl-mi1,
+.markdown-body .highlight .pl-mri,
+.markdown-body .highlight .pl-va,
+.markdown-body .highlight .pl-vpu {
+  color: #008080;
+}
+
+.markdown-body .highlight .pl-c,
+.markdown-body .highlight .pl-pdc {
+  color: #b4b7b4;
+  font-style: italic;
+}
+
+.markdown-body .highlight .pl-k,
+.markdown-body .highlight .pl-ko,
+.markdown-body .highlight .pl-kolp,
+.markdown-body .highlight .pl-mc,
+.markdown-body .highlight .pl-mr,
+.markdown-body .highlight .pl-ms,
+.markdown-body .highlight .pl-s,
+.markdown-body .highlight .pl-sok,
+.markdown-body .highlight .pl-st {
+  color: #6e5494;
+}
+
+.markdown-body .highlight .pl-ef,
+.markdown-body .highlight .pl-enf,
+.markdown-body .highlight .pl-enm,
+.markdown-body .highlight .pl-entc,
+.markdown-body .highlight .pl-eoi,
+.markdown-body .highlight .pl-sf,
+.markdown-body .highlight .pl-smc {
+  color: #d12089;
+}
+
+.markdown-body .highlight .pl-ens,
+.markdown-body .highlight .pl-eoai,
+.markdown-body .highlight .pl-kos,
+.markdown-body .highlight .pl-mh .pl-pdh,
+.markdown-body .highlight .pl-mp,
+.markdown-body .highlight .pl-pde,
+.markdown-body .highlight .pl-stp {
+  color: #458;
+}
+
+.markdown-body .highlight .pl-enti {
+  color: #d12089;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .pl-cce,
+.markdown-body .highlight .pl-enc,
+.markdown-body .highlight .pl-kou,
+.markdown-body .highlight .pl-mq {
+  color: #f93;
+}
+
+.markdown-body .highlight .pl-mp1 .pl-sf {
+  color: #458;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .pl-cos,
+.markdown-body .highlight .pl-ent,
+.markdown-body .highlight .pl-md,
+.markdown-body .highlight .pl-mdhf,
+.markdown-body .highlight .pl-ml,
+.markdown-body .highlight .pl-pdc1,
+.markdown-body .highlight .pl-pds,
+.markdown-body .highlight .pl-s1,
+.markdown-body .highlight .pl-scp,
+.markdown-body .highlight .pl-sol {
+  color: #df5000;
+}
+
+.markdown-body .highlight .pl-c1,
+.markdown-body .highlight .pl-cn,
+.markdown-body .highlight .pl-pse,
+.markdown-body .highlight .pl-pse .pl-s2,
+.markdown-body .highlight .pl-vi {
+  color: #a31515;
+}
+
+.markdown-body .highlight .pl-mb,
+.markdown-body .highlight .pl-pdb {
+  color: #df5000;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .pl-mi,
+.markdown-body .highlight .pl-pdi {
+  color: #6e5494;
+  font-style: italic;
+}
+
+.markdown-body .highlight .pl-ms1 {
+  background-color: #f5f5f5;
+}
+
+.markdown-body .highlight .pl-mdh,
+.markdown-body .highlight .pl-mdi {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .pl-mdr {
+  color: #0086b3;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .pl-s2 {
+  color: #333;
+}
+
+.markdown-body .highlight .pl-ii {
+  background-color: #df5000;
+  color: #fff;
+}
+
+.markdown-body .highlight .pl-ib {
+  background-color: #f93;
+}
+
+.markdown-body .highlight .pl-id {
+  background-color: #a31515;
+  color: #fff;
+}
+
+.markdown-body .highlight .pl-iu {
+  background-color: #b4b7b4;
+}
+
+.markdown-body .highlight .pl-mo {
+  color: #969896;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  float: left;
+  margin: 0.3em 0 0.25em -1.6em;
+  vertical-align: middle;
+}</style><title>skeletongame</title></head><body><article class="markdown-body"><h1>
+<a id="user-content-skeletongame" class="anchor" href="#skeletongame" aria-hidden="true"><span class="octicon octicon-link"></span></a>SkeletonGame</h1>
+
+<pre><code>SkeletonGame        (L3)
+------------------------
+BasicGame           (L2)
+------------------------
+libpinproc/pinproc  (L1)
+------------------------
+</code></pre>
+
+<p>SkeletonGame" --it's a proper third tier on top of BasicGame; think of it as the logical continuation of Starter.py --that is, if starter were a class that people were expected to subclass.  SkeletonGame is just a bunch of additions to  pyprocgame. It leverages everything that those of use who use PyProcGame know and love, and only intends to streamline some things for new users. It should help you make games faster.  Think of it as sucking out the best parts of the Judge Dredd sample game, modifying it to be generic, running on top of HD VGA, and then adding stuff to make games easier.</p>
+
+<p>Motivation: Most people who learn PyProcGame programming have done so by looking at existing open-source games and there are many good ones to learn from.  Unfortunately, the copy/paste/merge process is fairly error prone. I've done it a few times now and it gets dangerous with sequence dependant, asynchronous (i.e., event-driven) code that spans multiple files. Suppose 'project A' assumes that the attract mode will call <code>start_ball()</code>, but 'project B' assumes that <code>start_ball()</code> is called by the trough handler --depending on what you grab and from where, you may wind up with no balls in the trough or two balls.  Worse I've seen and encountered plenty of instances of the game appearing to be hung or crashing because some event doesn't occur due to functions being called in the wrong order as a result of copy/paste/merge-fail. Having worked on a few P-ROC projects now, I've tried to distill the common bits from each of those games so that I can avoid rewriting the same lines again and again.</p>
+
+<h2>
+<a id="user-content-goals" class="anchor" href="#goals" aria-hidden="true"><span class="octicon octicon-link"></span></a>Goals:</h2>
+
+<p>If SkeletonGame works, it means you (as the programmer) should:</p>
+
+<ul>
+<li>have VERY few lines of code in your game class.</li>
+<li>spend most of your time coding the logic for <em>modes</em>.</li>
+<li>be able to leverage fairly standard modes that have been written before.</li>
+<li>use helpers to create DMD content (in code) much easier.</li>
+<li>get started quickly.</li>
+</ul>
+
+<h4>
+<a id="user-content-skeletongame-includes" class="anchor" href="#skeletongame-includes" aria-hidden="true"><span class="octicon octicon-link"></span></a>SkeletonGame includes:</h4>
+
+<ul>
+<li>SkeletonGame is a subclass of <code>BasicGame</code>.  This class will serve as the new superclass for people's games. This class includes the following (by default):
+
+<ul>
+<li>tracking ball counts, ball time, game counts, game time, loads/saves settings and data</li>
+<li>assetManager (all your images, sounds, music, fonts, lampshows are pre-loaded by defining a yaml file)</li>
+<li>a better <code>Player</code> class: supports player state tracking built in with appropriate methods for access. </li>
+<li>
+<code>soundController</code> mode auto created and loaded </li>
+<li>OSC mode auto loaded (though apparently based on an old version..oops)</li>
+<li>Built-in (already working) trough and ballsave management (both based on Adam's)</li>
+<li> ... a VERY simple attract mode that's based on a simple, yet powerful yaml file/format</li>
+<li> ... service mode (basically Adam's) that senses dmd size</li>
+<li> ... high score entry (based on Adam's but in color) that senses dmd size</li>
+<li> ... high score frame generation for display in attract mode</li>
+<li> ... score display essentially based on Adam's but updated to use color fonts, background animations, etc. </li>
+<li> ... bonus helper (just like score: <code>bonus(tag, quantity)</code>) and a built-in bonus tally mode that kicks in at the end of the ball and shows any bonuses awarded to the player during their ball</li>
+<li>a Tilt mode that monitors the plumb tilt and the slam tilt switches (which must be named <code>tilt</code> and <code>slamTilt</code> respectively) -- when tilted all non-trough switches are blocked until all balls are returned to the trough</li>
+</ul>
+</li>
+<li>
+<code>dmdHelper</code> "mode" that generates a message on screen shown over a single image/animation, or a stack of them. It makes using the DMD extremely painless.  It's usage is: <code>displayText(text, key)</code> 
+If key is a list, it builds a grouped layer for all the keys. If text is a list instead of single string, all the text is shown on the frame. A single line is centered vertically, two lines are shown at 1/3, and 2/3, three lines at 1/4,2/4, and 3/4... You get the idea. </li>
+<li>Automatic state progressions without having to code for it in your game.  No more calls to <code>start_ball()</code>, <code>end_ball()</code>, etc.<br>
+</li>
+<li>A new optional-Mode superclass called <code>AdvancedMode</code>;  AdvancedMode offers:
+
+<ul>
+<li>a "lifecycle type" (ball, game, system, or custom) --modes are auto added/removed based on that type. They only need to be created by importing them in the game code and creating them in init. Skeleton game adds/removed them as per their type </li>
+<li>a refined set of game progress events that get sent to AdvancedModes, in priority order, prior to the actual event occuring. Now modes themselves can respond directly to <code>evt_game_starting</code>, <code>evt_ball_starting</code>, <code>evt_ball_ending</code>, <code>evt_game_ending</code>, <code>evt_player_added</code>, <code>evt_tilt</code>, and <code>evt_tilt_ball_ending</code> events. Modes can also request to postpone the event propegation (i.e., the calling of the next event handler) by returning a number of seconds that the mode needs to 'finish up' (e.g., play a special animation or sound) or can delay and stop further propegation by returning a tuple of the delay in seconds and the second entry is <code>True</code>
+</li>
+</ul>
+</li>
+<li>A small and hopefully well commented example game based on T2.</li>
+</ul>
+
+<h3>
+<a id="user-content-coming-soon" class="anchor" href="#coming-soon" aria-hidden="true"><span class="octicon octicon-link"></span></a>Coming Soon:</h3>
+
+<ul>
+<li>automatic handling of AC Relay coils (from yaml markup, only)</li>
+<li>ball search</li>
+<li>match mode</li>
+<li>more features to the bonus mode: using a yaml file to define about valid bonuses, score per award, Max numbers to allow of said award, etc. the tally is still in progress --this is not totally done.</li>
+</ul>
+
+<h1>
+<a id="user-content-getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h1>
+
+<ol>
+<li>
+<p>get the pre-requisite libraries installed:</p>
+
+<ul>
+<li>pyOSC</li>
+<li>PySDL2 + SDL2.dll, SDL2_TTF.dll</li>
+<li>OpenCV</li>
+<li>(more added as I remember it)</li>
+</ul>
+</li>
+<li>
+<p>Create your project workspace (folder structure):</p>
+
+<p>Assuming I put my game in a folder called <code>MyGame</code> my directory structure should look like:</p>
+
+<pre><code>MyGame/
+|
++--config/      [this is where most yaml files live]
+|
++--assets/      [your asset_list.yaml is here as well as individual dmds, sounds, lampshows]
+|
++--my_modes/    [.py files for the modes that you add to your game]
+|
++--MyGame.py    [your game class]
+|
++--config.yaml  [these are the settings for your game: dmd size, resolution, etc.]
+</code></pre>
+
+<p>Before we can really begin, you need a <code>config.yaml</code> file and a machine yaml file.</p>
+</li>
+<li>
+<p><code>config.yaml</code></p>
+
+<p>Use the default provided.  TODO: Paste documetnation from pinballcontrollers forum</p>
+</li>
+<li>
+<p><code>machine.yaml</code></p>
+
+<p>This is the machine definition file.  It defines all the switches, lamps and coils in your machine.  Some samples are available.</p>
+
+<p>If using your own you must adhere to a few things:</p>
+
+<ul>
+<li>your trough switches should be named <code>trough1</code>, <code>trough2</code>, .. <code>troughN</code> where N==num trough switches.</li>
+<li>your start button should be called <code>startButton</code>
+</li>
+<li>your shooter lane switch should be called <code>shooter</code>
+</li>
+<li>your (bob) tilt switch should be called <code>tilt</code>
+</li>
+<li>your slam-tilt switch should be called <code>slamTilt</code> </li>
+</ul>
+</li>
+<li>
+<p>Build your <code>asset_list.yaml</code></p>
+
+<p>TODO: quite a lot to write about the format.  The example is probably good to reporoduce here.  </p>
+
+<p>You must be sure you define a few things:</p>
+
+<ul>
+<li>A Font or HDFont named: <code>tilt-font-big</code>, <code>tilt-font-small</code>, <code>settings-font-small</code>, <code>high_score_entry_inits</code>, <code>high_score_entry_msg</code> <code>high_score_entry_letters</code>
+</li>
+<li>blah blah</li>
+<li>something else that's vital...</li>
+</ul>
+</li>
+<li>
+<p>Other important yaml files:</p>
+
+<h3>
+<a id="user-content-score_displayyaml" class="anchor" href="#score_displayyaml" aria-hidden="true"><span class="octicon octicon-link"></span></a>score_display.yaml</h3>
+</li>
+</ol>
+
+<div class="highlight highlight-yaml"><pre>    <span class="pl-s"><span class="pl-ent">ScoreLayout:</span></span>
+      <span class="pl-s"><span class="pl-ent">Fonts:</span></span>
+            <span class="pl-s"><span class="pl-ent">bottom_info:</span>                  </span><span class="pl-c"># the bottom info Credits/Ball Num</span>
+                  <span class="pl-s"><span class="pl-ent">Font:</span> <span class="pl-s">score_sub         </span></span><span class="pl-c"># value corresponds to a font key in asset_list.yaml</span>
+                  <span class="pl-s"><span class="pl-ent">FontStyle:</span> <span class="pl-s">blueish      </span></span><span class="pl-c"># FontStyles are also in asset_list and OPTIONAL</span>
+            <span class="pl-s"><span class="pl-ent">single_player:</span>                </span><span class="pl-c"># Fonts/Styles for single player play</span>
+                  <span class="pl-s"><span class="pl-ent">10_digits:</span></span>
+                        <span class="pl-s"><span class="pl-ent">Font:</span> <span class="pl-s">score_activeL </span></span><span class="pl-c"># corresponds to keys in asset_list.yaml</span>
+                  <span class="pl-s"><span class="pl-ent">11_digits:</span></span>
+                        <span class="pl-s"><span class="pl-ent">Font:</span> <span class="pl-s">score_activeM</span></span>
+                  <span class="pl-s"><span class="pl-ent">12plus:</span></span>
+                        <span class="pl-s"><span class="pl-ent">Font:</span> <span class="pl-s">score_activeS</span></span>
+            <span class="pl-s"><span class="pl-ent">multiplayer:</span>                 </span><span class="pl-c"># Fonts/Styles for multiplayer play</span>
+                  <span class="pl-s"><span class="pl-ent">active:</span>                 </span><span class="pl-c"># style for the active player</span>
+                        <span class="pl-s"><span class="pl-ent">7_digits:</span> </span>
+                              <span class="pl-s"><span class="pl-ent">Font:</span> <span class="pl-s">score_activeL</span></span>
+                        <span class="pl-s"><span class="pl-ent">8_digits:</span> </span>
+                              <span class="pl-s"><span class="pl-ent">Font:</span> <span class="pl-s">score_activeM</span></span>
+                        <span class="pl-s"><span class="pl-ent">9plus:</span> </span>
+                              <span class="pl-s"><span class="pl-ent">Font:</span> <span class="pl-s">score_activeS</span></span>
+                  <span class="pl-s"><span class="pl-ent">inactive:</span>               </span><span class="pl-c"># style for the inactive player(s)</span>
+                        <span class="pl-s"><span class="pl-ent">7_digits:</span> </span>
+                              <span class="pl-s"><span class="pl-ent">Font:</span> <span class="pl-s">score_inactive</span></span>
+                        <span class="pl-s"><span class="pl-ent">8_digits:</span> </span>
+                              <span class="pl-s"><span class="pl-ent">Font:</span> <span class="pl-s">score_inactive</span></span>
+                        <span class="pl-s"><span class="pl-ent">9plus:</span> </span>
+                              <span class="pl-s"><span class="pl-ent">Font:</span> <span class="pl-s">score_inactive</span></span>
+</pre></div>
+
+<h3>
+<a id="user-content-attractyaml" class="anchor" href="#attractyaml" aria-hidden="true"><span class="octicon octicon-link"></span></a>attract.yaml</h3>
+
+<div class="highlight highlight-yaml"><pre>        <span class="pl-s"><span class="pl-ent">Sequence:</span></span>
+        <span class="pl-s">- <span class="pl-ent">Combo:</span></span>
+            <span class="pl-s"><span class="pl-ent">Text:</span></span>
+                <span class="pl-s">- <span class="pl-s"><span class="pl-pds">"</span>MOcean<span class="pl-pds">"</span></span></span>
+                <span class="pl-s">- <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span></span>
+                <span class="pl-s">- <span class="pl-s"><span class="pl-pds">"</span>Presents<span class="pl-pds">"</span></span></span>
+            <span class="pl-s"><span class="pl-ent">Font:</span> <span class="pl-s">large</span></span>
+            <span class="pl-s"><span class="pl-ent">lampshow:</span> <span class="pl-s">attract_show_1</span></span>
+            <span class="pl-c1"><span class="pl-ent">duration:</span> 2.0</span>
+        <span class="pl-s">- <span class="pl-ent">Animation:</span></span>
+            <span class="pl-s"><span class="pl-ent">Name:</span> <span class="pl-s">t800-war</span></span>
+        <span class="pl-s">- <span class="pl-ent">Combo:</span></span>
+            <span class="pl-s"><span class="pl-ent">Text:</span></span>
+                <span class="pl-s">- <span class="pl-s"><span class="pl-pds">"</span>Terminator<span class="pl-pds">"</span></span></span>
+                <span class="pl-s">- <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span></span>
+                <span class="pl-s">- <span class="pl-s"><span class="pl-pds">"</span>2.0<span class="pl-pds">"</span></span></span>
+            <span class="pl-s"><span class="pl-ent">Font:</span> <span class="pl-s">large</span></span>
+            <span class="pl-s"><span class="pl-ent">Animation:</span> <span class="pl-s">chrome</span></span>
+            <span class="pl-s"><span class="pl-ent">FontStyle:</span> <span class="pl-s">blueish</span></span>
+            <span class="pl-s"><span class="pl-ent">lampshow:</span> <span class="pl-s">attract_show_2</span></span>
+            <span class="pl-c1"><span class="pl-ent">duration:</span> 2.0</span>
+        <span class="pl-s">- <span class="pl-ent">HighScores:</span></span>
+            <span class="pl-s"><span class="pl-ent">Font:</span> <span class="pl-s">large</span></span>
+            <span class="pl-s"><span class="pl-ent">Background:</span> <span class="pl-s">chrome</span></span>
+            <span class="pl-s"><span class="pl-ent">Order:</span></span>
+                <span class="pl-s">- <span class="pl-s">player</span></span>
+                <span class="pl-s">- <span class="pl-s">category</span></span>
+                <span class="pl-s">- <span class="pl-s">score</span></span>
+            <span class="pl-c1"><span class="pl-ent">duration:</span> 1.0</span></pre></div>
+
+<h1>
+<a id="user-content-game-event-flow" class="anchor" href="#game-event-flow" aria-hidden="true"><span class="octicon octicon-link"></span></a>GAME EVENT FLOW</h1>
+
+<p>A game class that is subclassed from SkeletonGame should be very short.  The example provided is fewer than 60 lines if you exclude imports, comments and whitespace.  Most of your code should be present in your mode classes, instead.</p>
+
+<p>Your game class should not call game_start, ball_end, etc.  It should also not need to subclass these methods.  You can, of course, do so, but you should not HAVE to.  SkeletonGame (and its constiutent parts, including the attract and bonus modes) will handle the successive event progression.  In a typical game, this looks like:</p>
+
+<h3>
+<a id="user-content-your-game-class-iniitalizes-itself-in-main" class="anchor" href="#your-game-class-iniitalizes-itself-in-main" aria-hidden="true"><span class="octicon octicon-link"></span></a>Your game class iniitalizes itself in main().</h3>
+
+<p>Behind the scenes, super(SkeletonGame,self).<strong>init</strong> does the following:</p>
+
+<ul>
+<li>initializes the sound controller</li>
+<li>finds the DMD settings from the config.yaml and sets up your display</li>
+<li>creates a lampshow controller</li>
+<li>loads all your assets from the asset_list.yaml file (shows the player a graphical loading bar)</li>
+<li>initializes and connects the ball_save and trough modes</li>
+<li>loads the OSC mode, bonus mode, score display </li>
+</ul>
+
+<p>Then, any AdvancedMode derived modes that you initialize are automatically added to skeletonGame's 'known modes' so it can add/remove them for you, based on their mode_type (game, ball, system, custom).  </p>
+
+<h3>
+<a id="user-content-when-you-call-reset" class="anchor" href="#when-you-call-reset" aria-hidden="true"><span class="octicon octicon-link"></span></a>When you call reset():</h3>
+
+<p>/about reset():/ The SkeletonGame version of reset() protects the modes that need to be in the game.  The old reset method would remove ALL modes from the game, but reset() in skeletonGame's will re-add modes that should not be removed and protect certain modes (e.g., the OSC controller) from being removed at all.</p>
+
+<p>The last thing your reset() method should do is call: self.start_attract_mode()</p>
+
+<p>Then, SkeletonGame takes over again, initiating the attract mode from the yaml file.
+When the player presses the switch with the name 'startButton', SkeletonGame will automatically:</p>
+
+<ul>
+<li>find modes with method <em>evt_game_starting</em> and call them </li>
+<li>find modes with method <em>evt_player_added</em> and call them</li>
+<li>find modes with method <em>evt_ball_starting</em> and call them </li>
+<li>add a ball to the shooter lane.</li>
+</ul>
+
+<p>Your modes hopefully do something here :)</p>
+
+<p>When the ball drains and the trough is full, SkeletonGame will automatically:</p>
+
+<ul>
+<li>finds modes with method <em>evt_ball_ending</em> and calls them</li>
+<li>show the 'end of ball' and bonus sequence (if bonuses were awarded)</li>
+<li>if the balls number is <em>less than</em> the quantity specified in the machine yaml
+
+<ul>
+<li>find modes with method <em>evt_ball_starting</em> and call them (repeating the cycle)</li>
+</ul>
+</li>
+<li>if the ball number is <em>greater than</em> the quantity specified in the machine yaml
+
+<ul>
+<li>finds modes with method <em>evt_game_ending</em> and calls them</li>
+<li>checks the players score against the high scores.  If greater, the player may enter his/her scores</li>
+<li>attract mode is shown again</li>
+</ul>
+</li>
+</ul>
+
+<p>So, the available events are:</p>
+
+<div class="highlight highlight-python"><pre>evt_player_added(player)
+evt_game_starting
+evt_ball_starting
+evt_ball_ending(shoot_again, last_ball)
+evt_game_ending
+</pre></div>
+
+<p>Using the framework:</p>
+
+<ol>
+<li>From you atract mode (if you don't like the one included)</li>
+</ol>
+</article></body></html>

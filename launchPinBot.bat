@@ -1,0 +1,2 @@
+python PinBotGame.py
+pause

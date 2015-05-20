@@ -1,0 +1,10 @@
+Audits: {Avg Ball Time: '0:23', Avg Extra Balls: 0, Avg Game Time: '2:41', Avg Score: 185523623,
+  Balls Played: 71, Games Played: 26, Games Started: 194}
+ClassicHighScores:
+- {date: 'Mon Apr 06 16:37:17 2015', inits: CCA, score: 5000000900}
+- {date: 'Tue Apr 14 15:28:12 2015', inits: BAE, score: 6000000}
+- {date: 'Sat Apr 25 14:27:01 2015', inits: 'DAN       ', score: 614300}
+- {date: 'Mon Apr 20 13:32:48 2015', inits: AAAABCCCCC, score: 200600}
+- {date: 'Tue Apr 21 17:43:42 2015', inits: 'DDD       ', score: 120400}
+LoopsHighScoreData:
+- {inits: GSS, score: 5}
